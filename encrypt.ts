@@ -12,6 +12,7 @@ function hashCreator() {
       endHash += genHash[i];
     }
     general.push([endHash.toString()]);
+    endHash = "";
   }
 }
 
