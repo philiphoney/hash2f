@@ -8,7 +8,7 @@ function hashCreator() {
     for (let i = 0; i < 16; i++) {
       genHash[i] = characters[Math.floor(Math.random() * 61)];
     }
-    for (let i = 1; i < 16; i++) {
+    for (let i = 0; i < 16; i++) {
       endHash += genHash[i];
     }
     general.push([endHash.toString()]);
