@@ -1,3 +1,11 @@
+/*
+ * [hash2f]{@link https://github.com/philiphoney/hash2f}
+ *
+ * @author Philip, Philiphoney
+ * @license MIT
+ * @copyright Philip, philiphoney 2023
+ *
+ */
 function dh2f4(content: any[]) {
     var hashNum:number[] = content[1].split(",").map(Number);
     var arrBlock:any = []

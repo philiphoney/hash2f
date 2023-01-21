@@ -1,3 +1,11 @@
+/*
+ * [hash2f]{@link https://github.com/philiphoney/hash2f}
+ *
+ * @author Philip, Philiphoney
+ * @license MIT
+ * @copyright Philip, philiphoney 2023
+ *
+ */
 function h2f4(v) {
     if (Array.isArray(v)) {
         return dh2f4(v);
@@ -28,10 +36,10 @@ function hashCreator() {
     var genHash = [];
     var endHash = [];
     for (var i = 0; i < 16; i++) {
-        for (var i_1 = 0; i_1 < 17; i_1++) {
+        for (var i_1 = 0; i_1 < 16; i_1++) {
             genHash[i_1] = characters[Math.floor(Math.random() * 61)];
         }
-        for (var i_2 = 1; i_2 < 17; i_2++) {
+        for (var i_2 = 0; i_2 < 16; i_2++) {
             endHash += genHash[i_2];
         }
         general.push([endHash.toString()]);
